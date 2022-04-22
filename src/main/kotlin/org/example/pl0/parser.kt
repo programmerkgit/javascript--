@@ -1,8 +1,17 @@
 package org.example.pl0
 
 /**
+* 日本語 := 文章
+* 文章 := {文 | 感嘆し}
+* 文 *= 主語 は|が 述語 {助詞}。
+* 感嘆し *= わあ！ やったぁ！
+* * * 主語Token(text: おれ, type: 主語), 各助詞Token {type: は, text: は},
+* */
+
+/**
  * program := block
  * block := statement-list
+ * statement-list := {statement}
  * constDecl := const identifier = number{, identifier = number }
  * varDecl := var identifier{, identifier}
  * funcDecl := function ident ([ident{, ident}]) { block };
